@@ -1,0 +1,222 @@
+/* 
+    CSS Guide 
+
+    1.  General Grid Styles
+        Utility Classes
+    2.  Mobile Grid
+    3.  Tablet Grid
+    4.  Desktop Grid
+    5.  XL Grid
+
+ */
+
+
+/* 1. ---General Grid Styles--- */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* ---Utility Classes--- */
+
+.hidden {
+    display: none;
+}
+
+.box {
+    background-color: #4D4D4D;
+    color: white;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* 2. ---Mobile Library Grid Styles--- */
+
+.full-width-grid {
+    display: grid;
+    grid-template-columns: 1fr minmax(0, 767px) 1fr;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-column-gap: 20px;
+    max-width: 767px;
+    margin: 0px auto;
+    padding: 0px 15px 0px 15px;
+}
+
+.col-span-auto {
+    grid-column: span 1 / span 1;
+}
+
+.col-span-1 {
+    grid-column: span 1 / span 1;
+}
+
+.col-span-2 {
+    grid-column: span 2 / span 2;
+}
+
+.col-span-3 {
+    grid-column: span 3 / span 3;
+}
+
+.col-span-4 {
+    grid-column: span 4 / span 4;
+}
+
+.col-span-full {
+    grid-column: 1 / -1;
+}
+
+
+.mobile {
+    display: block;
+}
+
+.tablet {
+    display: none;
+}
+
+.desktop {
+    display: none;
+}
+
+
+/* 3. ---Tablet Library Grid Styles--- */
+
+@media screen and (min-width: 768px) {
+
+    .full-width-grid {
+        display: grid;
+        grid-template-columns: 1fr minmax(0, 1199px) 1fr;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        grid-column-gap: 30px;
+        max-width: 1199px;
+    }
+
+    .t-col-span-1 {
+        grid-column: span 1 / span 1;
+    }
+
+    .t-col-span-2 {
+        grid-column: span 2 / span 2;
+    }
+
+    .t-col-span-3 {
+        grid-column: span 3 / span 3;
+    }
+
+    .t-col-span-4 {
+        grid-column: span 4 / span 4;
+    }
+
+    .t-col-span-5 {
+        grid-column: span 5 / span 5;
+    }
+
+    .t-col-span-6 {
+        grid-column: span 6 / span 6;
+    }
+
+    .t-col-span-7 {
+        grid-column: span 7 / span 7;
+    }
+
+    .t-col-span-8 {
+        grid-column: span 8 / span 8;
+    }
+
+    .t-col-span-9 {
+        grid-column: span 9 / span 9;
+    }
+
+    .t-col-span-10 {
+        grid-column: span 10 / span 10;
+    }
+
+    .t-col-span-11 {
+        grid-column: span 11 / span 11;
+    }
+
+    .t-col-span-12 {
+        grid-column: span 12 / span 12;
+    }
+
+    .t-col-span-full {
+        grid-column: 1 / -1;
+    }
+
+
+    .mobile {
+        display: none;
+    }
+
+    .tablet {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+}
+
+/* 4. ---Desktop Library Grid Styles--- */
+
+@media screen and (min-width: 1200px) {
+
+
+    .full-width-grid {
+        display: grid;
+        grid-template-columns: 1fr minmax(0, 1919px) 1fr;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        grid-column-gap: 30px;
+        max-width: 1919px;
+        margin: 0px auto;
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+
+
+    .mobile {
+        display: none;
+    }
+
+    .tablet {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+}
+
+/* 5. ---X-Large Desktop Library Grid Styles--- */
+
+@media screen and (min-width: 1920px) {
+
+    /*body {
+        background: blue;
+      }*/
+
+}
