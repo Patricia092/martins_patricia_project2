@@ -6,18 +6,27 @@
  */
 
 
- /* 1. ---General Styles--- */
+/* 1. ---General Styles--- */
 
- body {
+body {
     margin: 0px;
     padding: 0px;
 }
 
-img, embed, object, video, picture {
+img,
+embed,
+object,
+video,
+picture {
     max-width: 100%;
 }
 
-p, h1, h2, h3, h4, h5 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
     margin: 0px;
     padding: 0px;
 }
@@ -27,14 +36,17 @@ a {
     transition: all .5s ease-in-out;
 }
 
-input, textarea {
+input,
+textarea {
     display: block;
     margin: 0px;
     padding: 0px;
 }
 
-section h2, section h3, section p {
+section h2,
+section h3,
+section p {
     padding-left: 15px;
 }
 
- /* ---End of General Styles--- */
+/* ---End of General Styles--- */
